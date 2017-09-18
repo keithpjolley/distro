@@ -6,7 +6,8 @@ each point.
 
 Made with jquery for the sliders and d3 for the plotting.
 
-See online here: <https://www.jamulheavyindustries.com/distro/>
+See online here: <https://www.jamulheavyindustries.com/distro/><br>
+[Blog entry](https://blog.altgnat.com/probability/)
 
 Keith P Jolley<br>
 keithpjolley[at]gmail.com<br>
