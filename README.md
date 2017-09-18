@@ -8,6 +8,6 @@ Made with jquery for the sliders and d3 for the plotting.
 
 See online here: <https://www.jamulheavyindustries.com/distro/>
 
-Keith P Jolley
-keithpjolley[at]gmail.com
+Keith P Jolley<br>
+keithpjolley[at]gmail.com<br>
 Mon Sep 18 06:42:46 PDT 2017
