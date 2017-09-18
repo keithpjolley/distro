@@ -1,0 +1,75 @@
+/* <!-- 01SEP2017 keithpjolley@gmail.com Squalor Heights, CA. MIT License --> */
+
+.body { 
+  background-color: white;
+}
+
+#thesvg {
+  background-color: white;
+}
+
+.marker:hover {
+/*  transition:   all 0.25s ease-out; transition makes UI look laggy */
+  stroke-width: 5;
+}
+
+.marker.line {
+  stroke-width: 2;
+}
+
+.marker.circle {
+  stroke-width: 0;
+}
+
+.axis line, .axis path {
+  shape-rendering: crispEdges;
+  stroke: black;
+  fill: none;
+}
+
+.grid path {
+  display: none;
+}
+
+.grid .tick line {
+  stroke: #EEF;
+  stroke-width: thin;
+  fill:   none;
+}
+
+div.tooltip { 
+  position: absolute;     
+  height: 2em;         
+  width:  5em;
+  padding: 0.5em 1em;       
+  font: 12px sans-serif;    
+/*  background: lightsteelblue;  /**/
+  border: thin solid;
+  border-radius: 8px;     
+  pointer-events: none;     
+  text-align: left;
+  background: white;
+}
+
+div#plotdiv {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.controls {
+  border-radius: 5px;
+  border-width: thin;
+  border-color: lightgrey;
+  border-style: solid; /**/
+  margin: auto;
+  width: 960px;   /**/
+}
+
+.inset {
+  margin: 0em 5em;
+}

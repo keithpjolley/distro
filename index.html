@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- 01SEP2017 keithpjolley@gmail.com Squalor Heights, CA. MIT License -->
+<head>
+  <meta charset="utf-8">
+  <!--link rel="icon" type="image/png" href="include/images/favicon.ico"-->
+  <title>distro</title>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- for sliders -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <div id="plotdiv">
+    <h2 id="thetitle"></h2>
+    <svg id="thesvg" width="960" height="500"></svg>
+    <div class="inset">
+      <div id="thecontrols" onchange="draw()"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="distro.js"></script>
+</body>
+</html>
