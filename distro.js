@@ -148,6 +148,6 @@ document.addEventListener('DOMContentLoaded', function() {
   d3.selectAll(".xslide a" ).text("n")
   d3.selectAll(".pslide a" ).text("p")
   for(let i=0; i<N; i++) {
-    d3.selectAll("#control"+ i +" .ui-slider-track").style("background-color", color(i))
+    d3.selectAll("#control"+i +" .ui-slider-track").style("background-color", color(i))
   }
 }, false);

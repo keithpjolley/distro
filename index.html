@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!--link rel="icon" type="image/png" href="include/images/favicon.ico"-->
   <title>distro</title>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="/include/js/d3/4.2.3/d3.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- for sliders -->
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -19,11 +19,36 @@
     <div class="inset">
       <div id="thecontrols" onchange="draw()"></div>
     </div>
-    <div class="inset">
+    <div id="thecontent">
+      <h2>Explanation</h2>
       <p>
-        My <a href="https://blog.altgnat.com/probability/">blog</a> entry on this.<br>
-        The source code is on <a href="https://github.com/keithpjolley/distro">github</a>.
+        I wanted to understand and compare different binomial distributions. A binomial distribution is what you get when 
+        only one of two things can happen: pass/fail, yes/no, 0/1 (a Bernoulli random variable). For example, a car part
+        either fails before some point in time or it doesn't.
       </p>
+      <p>
+        So what this shows is how the bell-curve changes as we change the probability <i>p</i> and the sample size <i>n</i>.
+        The equation for each individual point <i>X<sub>i</sub></i> is given by:<br>
+        <img style="margin-left:auto;margin-right:auto;display:block;"
+             src="eq.png" alt="the probability mass function of a binomial random variable">
+        The sum of all <i>X</i> for every <i>n</i> is 1.
+      </p>
+      <p>
+        I knew the area under the curve had to remain constant but it wasn't intuitive to me how the curves would change as
+        the variables changed. Creating this helped me understand better. It makes sense that the curve is lowest/widest when 
+        <i>p=0.5</i> and greatest/thinnest when <i>p=0</i> or <i>p=1</i>. This is because you are gradually taking the "tails"
+        away from either edge as you move away from <i>p=0.5</i>.
+      </p>
+      <p>
+        This visualization was created with <a href="https://d3js.org">d3</a> for the graph and
+        <a href="https://www.jquery.com">jquery</a> for the controls.
+      </p>
+      <p>
+        See also the <a href="https://github.com/keithpjolley/distro">github repo</a> and
+        my <a href="https://blog.altgnat.com/probability/">blog post</a>.
+      </p>
+      
+ 
     </div>
   </div>
   <script type="text/javascript" src="distro.js"></script>

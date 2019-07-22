@@ -1,15 +1,39 @@
 /* <!-- 01SEP2017 keithpjolley@gmail.com Squalor Heights, CA. MIT License --> */
 
 .body { 
-  background-color: white;
+  background-color: #fff;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#plotdiv {
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  text-align: center;
+  width: 962px;
+  height: 502px;
+}
+
+#thecontent {
+  background-color: #fff;
+  text-align: left;
+  padding: 1em;
 }
 
 #thesvg {
   background-color: white;
+  display: block;
 }
 
 .marker:hover {
-/*  transition:   all 0.25s ease-out; transition makes UI look laggy */
+  /*  transition:   all 0.25s ease-out; transition makes UI look laggy */
   stroke-width: 5;
 }
 
@@ -37,7 +61,7 @@
   fill:   none;
 }
 
-div.tooltip { 
+.tooltip { 
   position: absolute;     
   height: 2em;         
   width:  5em;
@@ -51,16 +75,6 @@ div.tooltip {
   background: white;
 }
 
-div#plotdiv {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .controls {
   border-radius: 5px;
   border-width: thin;
@@ -71,5 +85,7 @@ div#plotdiv {
 }
 
 .inset {
-  margin: 0em 5em;
+  /*margin: 0em 5em;*/
+  margin: 0em;
+  width: 960px;   /**/
 }
